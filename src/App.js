@@ -39,7 +39,7 @@ function App() {
         setTimeout(()=>{
           setshErr(false)
           setshHome(true)
-        },3000)
+        },1500)
       })
   }
 
