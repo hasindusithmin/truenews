@@ -43,12 +43,6 @@ export default function Navbar() {
         <button  className="w3-bar-item w3-button w3-padding-24 w3-right" onClick={w3_open} ><i className="fa fa-bars"></i></button>
       </header>
       <div className="w3-overlay w3-hide-large" onClick={w3_open} style={{cursor:'pointer'}} title="close side menu" id="myOverlay"></div>
-      <div className="w3-main" style={{marginLeft:'250px'}}>
-        <div className="w3-hide-large" style={{marginTop:'83px'}}></div>
-        <header className="w3-panel w3-center w3-opacity w3-margin-bottom">
-          <h1 className="w3-xlarge">TRUE NEWS</h1>
-        </header>
-      </div>
     </div>
   );
 }
