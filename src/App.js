@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Navbar from "./components/Navbar";
+import Bar from "./components/Bar";
 import Home from "./components/Home";
 function App() {
 
@@ -8,7 +9,10 @@ function App() {
   return (
     <>
       <Navbar />
-      {shHome && <Home />}
+      <div className="w3-main" style={{ marginLeft: '250px' }}>
+        <Bar />
+        {shHome && <Home />}
+      </div>
     </>
   )
 }
