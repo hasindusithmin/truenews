@@ -23,11 +23,17 @@ export default function Navbar() {
           </h3>
         </div>
         <div className="w3-padding-64 w3-large w3-text-grey" style={{fontWeight:'bold'}}>
-          <button className="w3-bar-item w3-button">Shirts</button>
-          <button className="w3-bar-item w3-button">Dresses</button>
-          <button className="w3-bar-item w3-button">Jackets</button>
-          <button className="w3-bar-item w3-button">Gymwear</button>
-          <button className="w3-bar-item w3-button">Shoes</button>
+          <button className="w3-bar-item w3-button">Local</button>
+          <button className="w3-bar-item w3-button">India</button>
+          <button className="w3-bar-item w3-button">World</button>
+          <button className="w3-bar-item w3-button">Sports</button>
+          <button className="w3-bar-item w3-button">Science</button>
+          <button className="w3-bar-item w3-button">Cricket</button>
+          <button className="w3-bar-item w3-button">Business</button>
+          <button className="w3-bar-item w3-button">Football</button>
+          <button className="w3-bar-item w3-button">Opinions</button>
+          <button className="w3-bar-item w3-button">South Asia</button>
+          <button className="w3-bar-item w3-button">Entertainment</button>
         </div>
       </nav>
       <header className="w3-bar w3-top w3-hide-large w3-dark-grey w3-xlarge">
