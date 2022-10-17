@@ -19,7 +19,7 @@ export default function Navbar({handler}) {
         <div className="w3-container w3-display-container w3-padding-16">
           <i  onClick={w3_close} className="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
           <h3 className="w3-wide">
-            <img src={news} alt='news'/>
+            <img src={news} alt='news' onClick={()=>{window.location.reload()}}/>
           </h3>
         </div>
         <div className="w3-padding-64 w3-large w3-text-grey" style={{fontWeight:'bold'}}>
@@ -38,7 +38,7 @@ export default function Navbar({handler}) {
       </nav>
       <header className="w3-bar w3-top w3-hide-large w3-dark-grey w3-xlarge">
         <div className="w3-bar-item w3-padding-24 w3-wide">
-          <img src={news} alt='news' width={32} height={32}/>
+          <img src={news} alt='news' width={32} height={32} onClick={()=>{window.location.reload()}} />
         </div>
         <button  className="w3-bar-item w3-button w3-padding-24 w3-right" onClick={w3_open} ><i className="fa fa-bars"></i></button>
       </header>
