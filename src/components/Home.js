@@ -15,6 +15,15 @@ export default function Home() {
                 <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
                 <p>Chef, Coffeeist and Owner: Liam Brown</p>
             </div>
+            <p><span className="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+            <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+            <form action="/action_page.php" target="_blank">
+                <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required="" name="Name" /></p>
+                <p><input className="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required="" name="People" /></p>
+                <p><input className="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required="" name="date" /></p>
+                <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required="" name="Message" /></p>
+                <p><button className="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+            </form>
         </div>
     )
 

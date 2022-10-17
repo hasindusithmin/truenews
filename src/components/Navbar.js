@@ -2,7 +2,7 @@
 import news from "../news64.png"
 
 
-export default function Navbar() {
+export default function Navbar({handler}) {
   // Open and close sidebar
   function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
@@ -23,17 +23,17 @@ export default function Navbar() {
           </h3>
         </div>
         <div className="w3-padding-64 w3-large w3-text-grey" style={{fontWeight:'bold'}}>
-          <button className="w3-bar-item w3-button">Local</button>
-          <button className="w3-bar-item w3-button">India</button>
-          <button className="w3-bar-item w3-button">World</button>
-          <button className="w3-bar-item w3-button">Sports</button>
-          <button className="w3-bar-item w3-button">Science</button>
-          <button className="w3-bar-item w3-button">Cricket</button>
-          <button className="w3-bar-item w3-button">Business</button>
-          <button className="w3-bar-item w3-button">Football</button>
-          <button className="w3-bar-item w3-button">Opinions</button>
-          <button className="w3-bar-item w3-button">South Asia</button>
-          <button className="w3-bar-item w3-button">Entertainment</button>
+          <button className="w3-bar-item w3-button" id="local" onClick={handler}>Local</button>
+          <button className="w3-bar-item w3-button" id="india" onClick={handler}>India</button>
+          <button className="w3-bar-item w3-button" id="world" onClick={handler}>World</button>
+          <button className="w3-bar-item w3-button" id="sports" onClick={handler}>Sports</button>
+          <button className="w3-bar-item w3-button" id="science" onClick={handler}>Science</button>
+          <button className="w3-bar-item w3-button" id="cricket" onClick={handler}>Cricket</button>
+          <button className="w3-bar-item w3-button" id="business" onClick={handler}>Business</button>
+          <button className="w3-bar-item w3-button" id="football" onClick={handler}>Football</button>
+          <button className="w3-bar-item w3-button" id="opinions" onClick={handler}>Opinions</button>
+          <button className="w3-bar-item w3-button" id="southasia" onClick={handler}>South Asia</button>
+          <button className="w3-bar-item w3-button" id="entertainment" onClick={handler}>Entertainment</button>
         </div>
       </nav>
       <header className="w3-bar w3-top w3-hide-large w3-dark-grey w3-xlarge">
