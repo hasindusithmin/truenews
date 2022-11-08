@@ -18,11 +18,11 @@ export default function Home({ handler }) {
             <div className="w3-row-padding w3-center w3-padding-24" style={{margin:'0 -16px'}}>
                 <div className="w3-half w3-dark-grey">
                     <p><i className="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
-                    <p>hasindusithmin64@gmail.com</p>
+                    <p>mail@domain.com</p>
                 </div>
                 <div className="w3-half w3-teal">
                     <p><i className="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
-                    <p>+94710590694</p>
+                    <p>+947xxxxxxxx</p>
                 </div>
             </div>
         </div>
