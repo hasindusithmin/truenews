@@ -54,12 +54,12 @@ function App() {
 
         {shErr && <p className="w3-center w3-text-red w3-large"><b>server busy try again later</b></p>}
 
-        {category && <h5 className="w3-center w3-padding-64"><span className="w3-tag w3-wide">{category}</span></h5>}
+        {category && <h5 className="w3-center w3-padding-64"><span className="w3-tag w3-wide w3-xxlarge">{category} NEWS</span></h5>}
 
         {
           news
           &&
-          <div className="w3-container w3-padding-48 w3-card" style={{display:'block'}}>
+          <div className="w3-container w3-padding-48" style={{display:'block'}}>
               {news.map(({title,description,link,pubDate})=><News key={Math.random().toString()} title={title} description={description} link={link} pubDate={pubDate}/>)}
           </div>
         }
