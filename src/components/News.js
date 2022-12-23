@@ -9,6 +9,6 @@ export default function News({title,description,link,pubDate}) {
             </h5>
             <p className="w3-text-grey">{description}</p>
             <p><strong>pubDate&nbsp;:&nbsp;</strong>{pubDate}</p>  
-        </>
+        </div>
     )
 }
