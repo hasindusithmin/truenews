@@ -8,7 +8,7 @@ export default function News({title,description,link,pubDate}) {
                 <a href={link} target="_blank" rel="noreferrer" style={{textDecoration:'none'}}>{title}</a>
             </h5>
             <p className="w3-text-grey w3-monospace">{description}</p>
-            <p><strong>pubDate&nbsp;:&nbsp;</strong><code>{pubDate.replace('+0530','')}</code></p>  
+            <p><strong>pubDate&nbsp;:&nbsp;</strong><code>{pubDate.split('+')[0].trim()}</code></p>  
         </div>
     )
 }
