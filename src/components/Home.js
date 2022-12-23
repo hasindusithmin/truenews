@@ -23,7 +23,7 @@ export default function Home({ handler }) {
                     <p>hasindusithmin64@gmail.com</p>
                 </div>
                 <div className="w3-half w3-teal">
-                    <p><i className="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+                    <p><i className="fa fa-phone-square w3-xxlarge w3-text-light-grey"></i></p>
                     <p>+94740765900</p>
                 </div>
             </div>
