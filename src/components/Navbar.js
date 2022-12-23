@@ -17,7 +17,7 @@ export default function Navbar({handler}) {
     <div >
       <nav className="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style={{zIndex:3,width:'250px'}} id="mySidebar">
         <div className="w3-container w3-display-container w3-padding-16">
-          <i  onClick={w3_close} className="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+          <i  onClick={w3_close} className="fa fa-remove w3-hide-large w3-button w3-display-topright w3-large"></i>
           <h3 className="w3-wide">
             <img src={news} alt='news' onClick={()=>{window.location.reload()}}/>
           </h3>
