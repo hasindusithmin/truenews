@@ -3,7 +3,7 @@
 export default function News({title,description,link,pubDate}) {
 
     return (
-        <>
+        <div className="w3-padding w3-card">
             <h5>
                 <a href={link} target="_blank" rel="noreferrer" style={{textDecoration:'none'}}>{title}</a>
             </h5>
