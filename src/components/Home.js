@@ -1,21 +1,27 @@
 import tv from "../tv.gif"
+import { Typewriter } from "react-simple-typewriter"
 
 export default function Home({ handler }) {
 
     return (
         <div className="w3-container">
-            <div className="w3-xxlarge w3-hide-small w3-center w3-animate-fading w3-opacity"><b>We Report You Decide</b></div>
+            <div className="w3-xxlarge w3-hide-small w3-center w3-animate-fading w3-opacity">
+                <b>
+                    <Typewriter words={['We Report You Decide']} />
+                </b>
+            </div>
             <div className="w3-hide-large w3-hide-medium w3-small w3-center w3-animate-fading w3-opacity"><b>We Report You Decide</b></div>
             <div className="w3-center">
-                    <img src={tv} alt="News" class="w3-image" style={{ width: '75%' }} />
+                <img src={tv} alt="News" class="w3-image" style={{ width: '75%' }} />
             </div>
             <p><b>Stay up to date with the latest news from around the world with our comprehensive coverage in the following categories:</b></p>
             <p className="w3-text-grey w3-bold">
-                <code>Local, India, World, Sports, Science, Cricket, Business, Football, Opinions, South Asia, and Entertainment.</code>
+                <code>India, World, Sports, Science, Cricket, Business, Football, Opinions, South Asia, and Entertainment.</code>
             </p>
             <div className="w3-panel w3-leftbar w3-light-grey">
                 <p><i>"The free press is the mother of all our freedoms. It is the guardian of the public trust. It is the cornerstone of our democracy."</i> - Lyndon B. Johnson</p>
             </div>
+            <p>Do you like to use our API? It's free. - <a href="https://newsapi-1-t3408867.deta.app" target="_blank" rel="noreferrer">documentation</a></p>
             <p><span className="w3-tag">FYI!</span> Are you interested in advertising on our website please contact</p>
             <div className="w3-row-padding w3-center w3-padding-24" style={{ margin: '0 -16px' }}>
                 <div className="w3-half w3-dark-grey">
