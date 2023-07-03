@@ -4,7 +4,8 @@ import Bar from "./components/Bar";
 import Home from "./components/Home";
 import News from "./components/News";
 import axios from "axios";
-import { Typewriter } from 'react-simple-typewriter'
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 
 function App() {
 
@@ -40,14 +41,18 @@ function App() {
         setshWait(false)
         setCategory(category)
         setNews(responese.data)
-        let prompt = '';
-        prompt += '### News Titles\n'
+        let prompt = '### News:\n';
         responese.data.forEach(({ title }) => {
           prompt += `- ${title}\n`;
         })
-        prompt += "Provide a concise summary of the news without any other sentences"
+        prompt += 'Please provide concise and objective single-paragraph summaries for the above news articles, adhering to the given rules:\n'
+        prompt += '1. Stick to the main points and key details.\n'
+        prompt += '2. Avoid personal opinions or biases\n'
+        prompt += '3. Provide accurate information from reliable sources.\n'
+        prompt += '4. Keep the summary brief, ranging from a few sentences to a paragraph.\n'
+        prompt += '5. Focus on the relevance and significance of the news'
         setSummaryProcessing(true);
-        axios.post('https://claudeapi.onrender.com', { prompt }, {
+        axios.post('https://claudeapi.onrender.com?engine=sage', { prompt }, {
           auth: {
             username: process.env.REACT_APP_UNAME,
             password: process.env.REACT_APP_PWORD
@@ -98,7 +103,11 @@ function App() {
             summaryProcessing && <p className="w3-text-blue w3-center"><img className="w3-image w3-round-large" width={100} height={100} src="/soon.gif" alt="soon"></img></p>
           }
           {
-            summary && <p className="w3-text-blue"><b><Typewriter words={[summary]} typeSpeed={20} cursor /></b></p>
+            summary && <p className="w3-text-blue-grey w3-card w3-padding w3-round-large" style={{ fontWeight: 'bold' }}>
+              <code>
+                <ReactMarkdown children={summary} remarkPlugins={[remarkGfm]} />
+              </code>
+            </p>
           }
           {
             summaryErr && <p className="w3-center w3-text-red w3-large w3-justify"><b>{summaryErr}</b></p>
@@ -108,7 +117,7 @@ function App() {
         {
           news
           &&
-          <div className="w3-container w3-padding-32" style={{ display: 'block' }}>
+          <div className="w3-container w3-padding" style={{ display: 'block' }}>
             {news.map(({ title, description, link, pubDate }) => (
               <News
                 key={Math.random().toString()}
